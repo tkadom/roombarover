@@ -1,2 +1,0 @@
-  opkg update && opkg install python-pip python-setuptools python-smbus
-  pip install Adafruit_BBIO
