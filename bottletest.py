@@ -5,13 +5,14 @@ import time
 from roombaSCI import RoombaAPI
 
 x = RoombaAPI("/dev/ttyO4",115200)
+
 try:
 	x.connect()
         x.start()
         x.control()
 except:
-        x.close()
-        raise
+	x.close()
+	raise
 
 @route('/left')
 def turn_left():
